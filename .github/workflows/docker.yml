@@ -24,4 +24,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: lradhy/hub-discord:latest
+          tags: lradhy/bill-cipher:latest
