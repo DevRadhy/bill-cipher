@@ -16,7 +16,7 @@ const rest = new REST({ version: '9' }).setToken(String(process.env.SECRET_TOKEN
     console.log('Started refreshing application (/) commands.');
 
     await rest.put(
-      Routes.applicationGuildCommands('1014260221486583849', '971159806197002282'),
+      Routes.applicationCommands(String(client.user?.id)),
       { body: interactions },
     );
 
