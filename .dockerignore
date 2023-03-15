@@ -6,6 +6,7 @@ node_modules/
 **.spec.*
 jest.config.js
 
+**/tests/
 **/mock/
 
 # Lint
