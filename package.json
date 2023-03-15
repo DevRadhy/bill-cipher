@@ -8,10 +8,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "npm-run-all -p start:*",
-    "start:server": "node dist/index.js",
-    "dev": "npm-run-all -p dev:*",
-    "dev:server": "tsnd --inspect --respawn --transpile-only --ignore-watch node_modules -r dotenv/config src/index.ts",
+    "start": "node dist/index.js",
+    "dev": "tsnd --inspect --respawn --transpile-only --ignore-watch node_modules -r dotenv/config src/index.ts",
     "test": "jest",
     "lint": "eslint . --ext .ts",
     "lint:fix": "yarn lint --fix"
@@ -20,8 +18,7 @@
     "@discordjs/rest": "^1.1.0",
     "discord-api-types": "^0.37.5",
     "discord.js": "^13.2.0",
-    "dotenv": "^10.0.0",
-    "npm-run-all": "^4.1.5"
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.24",
